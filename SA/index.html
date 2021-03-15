@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>US Aviation</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,54 +50,49 @@ html {
       height: 640px;
       background-color: rgb(179, 179, 179);
     }
-    #section7 {
-      height: 640px;
-      background-color: rgb(179, 179, 179);
-    }
+    body {margin:0;}
 
-    body {
-    background-image: url('/pix/samples/bg1.gif');
-  }
-  main {
-    margin-bottom: 100%;
-  }
-  .floating-menu {
-    font-family: sans-serif;
-    background: rgb(255, 255, 255);
-    padding: 1px;;
-    width: 140px;
-    z-index: 100;
-    position: fixed;
-    right: 10px; 
-  }
-  .floating-menu a, 
-  .floating-menu h3 {
-    font-size: 0.9em;
-    display: outside;
-    margin: 15%;
-    color: rgb(3, 3, 3);
-  }
-
-  img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 200px;
+.navbar {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.452);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .navbar a:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  .main {
+    padding: 1px;
+    margin-top: 10px;
+    height: 150px; /* Used in this example to enable scrolling */
+  }
+
 
     </style>
     </head>
     <body>
-        <nav class="floating-menu">
-          <a href="#section1">Home</a>
-          <a href="#section2">Airports</a>
-          <a href="#section3">Airlines</a>
-          <a href="#section4">Routes</a>
-          <a href="#section5">Data</a>
-          <a href="#section6">Tables</a>
-          <a href="#section7">Conclusion</a>
-
-        </nav>        
+      <div class="navbar">
+        <a href="#section1">Home</a>
+        <a href="#section2">Airports</a>
+        <a href="#section3">Airlines</a>
+        <a href="#section4">Routes</a>
+        <a href="#section5">Data</a>
+        <a href="#section6">Tables</a>
+      </div>       
     <div class="main" id="section1">
         <div class="box transparent">
         <h1>ETL-PROJECT</h1>
@@ -110,9 +105,9 @@ html {
       <p><h6>After all the data has being processed accordingly we will create an ERD to show the content of each table, along with its Primary key and its relationship to other tables and to finalize the ETL Project we will take all the data collected and publish it on a website that will include in addition to our proposal, 3 links for the sets of data that we worked on along with a page for the ERD graph.</p></h6>
       <p><h6>
         Links:
-      <br><a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv" target="new">airlines Data</a>
-      <br><a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv"target="new">Airports Data</a>
-      <br><a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv"target="new">Routes Data</a>          
+      <br><a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv" target="new">airlines Data</a>, 
+      <a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv"target="new">Airports Data</a> &
+      <a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv"target="new">Routes Data</a>          
       </h6></p>    
         </div>
     </div>
@@ -122,7 +117,7 @@ html {
             <h1>AIRPORTS</h1>
           <P><h6>based on the data provided, there is a 1512 airports operating in the United States (both Military and Civilian)
             <p>
-            <img src="images/jupyter.gif" style="width: 480px">
+            <img src="images/jupyter.gif" style="width: 30%">
               </section>
         </div>
     </div>    
@@ -143,11 +138,7 @@ html {
         <h2>Section 6</h2>
         </div>
                 
-    <div class="main" id="section7">
-        <h2>Section 7</h2>
-        </div>
-        
-    
+   
     </body>
     </html>
     
