@@ -16,51 +16,51 @@ html {
     #section1 {
       height: 640px;
       background: url(images/sec1.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }
     
     #section2 {
         height: 640px;
       background: url(images/sec2.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+      -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }
     #section3 {
       height: 640px;
       background: url(images/sec3.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+      -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }  
     #section4 {
       height: 640px;
       background: url(images/sec4.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;   
+      -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%; 
     }
     #section5 {
       height: 640px;
       background: url(images/sec5.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;   
+      -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }
     #section6 {
       height: 640px;
       background: url(images/sec6.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;   
+      -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }
     body {margin:0;}
 
@@ -98,6 +98,7 @@ html {
     </style>
     </head>
     <body>
+
       <div class="navbar">
         <a href="#section1">Home</a>
         <a href="#section2">Airports</a>
@@ -106,65 +107,69 @@ html {
         <a href="#section5">Data</a>
         <a href="#section6">Tables</a>
       </div>       
-    <div class="main" id="section1">
+        <div class="main" id="section1">
         <div class="box transparent">
-        <h1>ETL-PROJECT</h1>
+        <h2>ETL-PROJECT</h2>
       <p><h6>an inside look of the Data of Airpotrs, Airlines and Routes</h6></p>
       <h4><u>Project Members:</u> Sam Azhari, Alciluz Gomez & Ian Castro</h4>
-      <P><h6>in this Project, we will extract the data of airpots, airlines and routes from 
+      <P>in this Project, we will extract the data of airpots, airlines and routes from 
           public source such as <a href="https://data.world/">data.world</a> and <a href="https://www.kaggle.com/">kaggle.com</a>
        <P>we will be using Pandas and Jupyter lab to clean the data to only include airports operations in the US. Some additional data that we will be using are the airports codes <B>(ICAO)</B> as the primary key that will assist us in making an engine connection through Jupyter lab to push the data into our Postgres database  so we can create an accurate database and three tables for each respective column. </P>           
-      </h6></P>
-      <p><h6>After all the data has being processed accordingly we will create an ERD to show the content of each table, along with its Primary key and its relationship to other tables and to finalize the ETL Project we will take all the data collected and publish it on a website that will include in addition to our proposal, 3 links for the sets of data that we worked on along with a page for the ERD graph.</p></h6>
-      <p><h6>
+      </P>
+      <p>After all the data has being processed accordingly we will create an ERD to show the content of each table, along with its Primary key and its relationship to other tables and to finalize the ETL Project we will take all the data collected and publish it on a website that will include in addition to our proposal, 3 links for the sets of data that we worked on along with a page for the ERD graph.</p>
+      <p>
         Links:
       <br><a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv" target="new">airlines Data</a>, 
       <a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv"target="new">Airports Data</a> &
       <a href="https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv"target="new">Routes Data</a>          
-      </h6></p>    
+      </p>    
         </div>
     </div>
-  
     <div class="main" id="section2">
         <div class="box transparent">
             <h1>AIRPORTS</h1>
-          <P><h6>based on the data provided, there is a 1512 airports operating in the United States (both Military and Civilian)
-            <p>
-            <img src="images/jupyter.gif" style="width: 30%">
-              </section>
+          <P>based on the data collected, there are 1512 airports operating in the United States (both Military and Civilian). this includes Air Stations, Weather and Radar Stations as well.
+            <div class="col-md-12 text-center">
+              <a class="btn btn-dark" href="airport_df.html" target="iframe1" role="button">Table</a>
+              <a class="btn btn-dark" href="airports.sql" target="iframe1" role="button">SQL</a>
+              <a class="btn btn-dark" href="images/jupyter.gif" target="iframe1" role="button">Jupyter</a>             <p>              
+            <iframe class="responsive-iframe" name="iframe1" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
         </div>
     </div>    
 
     <div class="main" id="section3">
       <div class="box transparent">
-      <p><h6>an inside look of the Data of Airpotrs, Airlines and Routes</h6></p>
-      <h4><u>Project Members:</u> Sam Azhari, Alciluz Gomez & Ian Castro</h4>
-      <P><h6>in this Project, we will extract the data of airpots, airlines and routes from 
-          public source such as <a href="https://data.world/">data.world</a> and <a href="https://www.kaggle.com/">kaggle.com</a>
-       <P>we will be using Pandas and Jupyter lab to clean the data to only include airports operations in the US. Some additional data that we will be using are the airports codes <B>(ICAO)</B> as the primary key that will assist us in making an engine connection through Jupyter lab to push the data into our Postgres database  so we can create an accurate database and three tables for each respective column. </P>           
-      </h6></P>
-      <p><h6>After all the data has being processed accordingly we will create an ERD to show the content of each table, along with its Primary key and its relationship to other tables and to finalize the ETL Project we will take all the data collected and publish it on a website that will include in addition to our proposal, 3 links for the sets of data that we worked on along with a page for the ERD graph.</p></h6>
-      <p><h6>
-      </div>      
+        <h1>AIRLINES</h1>
+        <P>Based on the data collected, there are xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          <div class="col-md-12 text-center">
+            <a class="btn btn-dark" href="airlines_df.html" target="iframe2" role="button">Table</a>
+            <a class="btn btn-dark" href="airlines.sql" target="iframe2" role="button">SQL</a>
+            <a class="btn btn-dark" href="images/tab3.jpg" target="iframe2" role="button">Jupyter</a>             <p>              
+          <iframe class="responsive-iframe" name="iframe2" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+    </div>      
     </div>
 
       <div class="main" id="section4">
         <div class="box transparent">
-          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
-
-          </h6></p>
-        </div>
-  </div>
-
+          <h1>ROUTES</h1>
+          <P>Based on the data collected, there are xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <div class="col-md-12 text-center">
+              <a class="btn btn-dark" href="routes_df.html" target="iframe3" role="button">Table</a>
+              <a class="btn btn-dark" href="routes.sql" target="iframe3" role="button">SQL</a>
+              <a class="btn btn-dark" href="images/tab3.jpg" target="iframe3" role="button">Jupyter</a>             <p>              
+            <iframe class="responsive-iframe" name="iframe3" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+      </div>      
+      </div>
+  
     <div class="main" id="section5">
         <div class="box transparent"> 
-          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
+          <p>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
         </div>
       </div>
 
       <div class="main" id="section6">
         <div class="box transparent">
-          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
+          <p>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
           </div>
       </div>                
    
