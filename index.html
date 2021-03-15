@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>US Aviation</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -40,15 +40,27 @@ html {
     }  
     #section4 {
       height: 640px;
-      background-color: rgb(179, 179, 179);
+      background: url(images/sec4.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
     }
     #section5 {
       height: 640px;
-      background-color: rgb(179, 179, 179);
+      background: url(images/sec5.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
     }
     #section6 {
       height: 640px;
-      background-color: rgb(179, 179, 179);
+      background: url(images/sec6.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
     }
     body {margin:0;}
 
@@ -58,6 +70,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
   .navbar a {
@@ -123,21 +136,37 @@ html {
     </div>    
 
     <div class="main" id="section3">
-        <h2>Section 3</h2>
-      </div>
-
-      <div class="main" id="section4">
-    <h2>Section 4</h2>
+      <div class="box transparent">
+      <p><h6>an inside look of the Data of Airpotrs, Airlines and Routes</h6></p>
+      <h4><u>Project Members:</u> Sam Azhari, Alciluz Gomez & Ian Castro</h4>
+      <P><h6>in this Project, we will extract the data of airpots, airlines and routes from 
+          public source such as <a href="https://data.world/">data.world</a> and <a href="https://www.kaggle.com/">kaggle.com</a>
+       <P>we will be using Pandas and Jupyter lab to clean the data to only include airports operations in the US. Some additional data that we will be using are the airports codes <B>(ICAO)</B> as the primary key that will assist us in making an engine connection through Jupyter lab to push the data into our Postgres database  so we can create an accurate database and three tables for each respective column. </P>           
+      </h6></P>
+      <p><h6>After all the data has being processed accordingly we will create an ERD to show the content of each table, along with its Primary key and its relationship to other tables and to finalize the ETL Project we will take all the data collected and publish it on a website that will include in addition to our proposal, 3 links for the sets of data that we worked on along with a page for the ERD graph.</p></h6>
+      <p><h6>
+      </div>      
     </div>
 
-    <div class="main" id="section5">
-        <h2>Section 5</h2>
-        </div>
+      <div class="main" id="section4">
+        <div class="box transparent">
+          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
 
-    <div class="main" id="section6">
-        <h2>Section 6</h2>
+          </h6></p>
         </div>
-                
+  </div>
+
+    <div class="main" id="section5">
+        <div class="box transparent"> 
+          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
+        </div>
+      </div>
+
+      <div class="main" id="section6">
+        <div class="box transparent">
+          <p><h6>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
+          </div>
+      </div>                
    
     </body>
     </html>
