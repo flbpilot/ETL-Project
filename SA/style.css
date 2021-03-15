@@ -1,25 +1,18 @@
 .box {
-  min-height: 640px;
-  padding: 35px;
+  min-height: 100%;
+  padding: 40px;
   margin: 0px;
-  font-weight: 800;
-  color: rgb(75, 73, 73);
+  font-weight: 450;
+  color: rgb(32, 32, 32);
 }
 
 .transparent {
-  background: rgba(255, 255, 255, 0.692);
+  background: rgba(255, 255, 255, 0.775);
 }
 
-.purple {
-  background: rebeccapurple;
-}
-
-.red {
-  background: indianred;
-}
 
 body {
-  background-color: rgba(104, 100, 100, 0.561);
+  background-color: rgba(92, 90, 90, 0.561);
   display: flex;
   align-items: center;
   justify-content: center;
