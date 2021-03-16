@@ -14,7 +14,7 @@ html {
     }
     
     #section1 {
-      height: 640px;
+      height: 640px; width: 100%;
       background: url(images/sec1.jpg) no-repeat center center fixed; 
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -23,7 +23,7 @@ html {
     }
     
     #section2 {
-        height: 640px;
+        height: 640px; width: 100%;
       background: url(images/sec2.jpg) no-repeat center center fixed; 
       -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -31,7 +31,7 @@ html {
         background-size: 100%;
     }
     #section3 {
-      height: 640px;
+      height: 640px; width: 100%;
       background: url(images/sec3.jpg) no-repeat center center fixed; 
       -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -39,7 +39,7 @@ html {
         background-size: 100%;
     }  
     #section4 {
-      height: 640px;
+      height: 640px; width: 100%;
       background: url(images/sec4.jpg) no-repeat center center fixed; 
       -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -47,7 +47,7 @@ html {
         background-size: 100%; 
     }
     #section5 {
-      height: 640px;
+      height: 640px; width: 100%;
       background: url(images/sec5.jpg) no-repeat center center fixed; 
       -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -55,7 +55,7 @@ html {
         background-size: 100%;
     }
     #section6 {
-      height: 640px;
+      height: 640px; width: 100%;
       background: url(images/sec6.jpg) no-repeat center center fixed; 
       -webkit-background-size: 100%;
         -moz-background-size: 100%;
@@ -137,51 +137,63 @@ html {
     <div class="main" id="section2">
         <div class="box transparent">
             <h1>AIRPORTS</h1>
-          <P>based on the data collected, there are 1512 airports operating in the United States (both Military and Civilian). this includes Air Stations, Weather and Radar Stations as well.
+          <P>Below is the Data collected from our Database about Airports.
             <div class="col-md-12 text-center">
               <a class="btn btn-dark" href="airport_df.html" target="iframe1" role="button">Table</a>
-              <a class="btn btn-dark" href="airports.txt" target="iframe1" role="button">SQL</a>
-              <a class="btn btn-dark" href="images/tab3.jpg" target="iframe1" role="button">Jupyter</a>             <p>              
-            <iframe class="responsive-iframe" name="iframe1" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+              <a class="btn btn-dark" href="data/airports.txt" target="iframe1" role="button">SQL</a>
+              <a class="btn btn-dark" href="imageframe1.html" target="iframe1" role="button">Images</a>             <p>              
+            <iframe class="responsive-iframe" name="iframe1" src="iframelanding.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
         </div>
-    </div>    
-
+    </div>  
+  </div>
+    
     <div class="main" id="section3">
       <div class="box transparent">
         <h1>AIRLINES</h1>
-        <P>Based on the data collected, there are xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        <P>Below is the Data collected from our Database about Airlines.
           <div class="col-md-12 text-center">
             <a class="btn btn-dark" href="airlines_df.html" target="iframe2" role="button">Table</a>
-            <a class="btn btn-dark" href="airlines.txt" target="iframe2" role="button">SQL</a>
-            <a class="btn btn-dark" href="images/tab3.jpg" target="iframe2" role="button">Jupyter</a>             <p>              
-          <iframe class="responsive-iframe" name="iframe2" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+            <a class="btn btn-dark" href="data/airlines.txt" target="iframe2" role="button">SQL</a>
+            <a class="btn btn-dark" href="imageframe2.html" target="iframe2" role="button">Images</a>             <p>              
+          <iframe class="responsive-iframe" name="iframe2" src="iframelanding.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
     </div>      
+    </div>
     </div>
 
       <div class="main" id="section4">
         <div class="box transparent">
           <h1>ROUTES</h1>
-          <P>Based on the data collected, there are xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          <P>Below is the Data collected from our Database about Airline Routes.
             <div class="col-md-12 text-center">
               <a class="btn btn-dark" href="routes_df.html" target="iframe3" role="button">Table</a>
-              <a class="btn btn-dark" href="routes.txt" target="iframe3" role="button">SQL</a>
-              <a class="btn btn-dark" href="images/tab3.jpg" target="iframe3" role="button">Jupyter</a>             <p>              
-            <iframe class="responsive-iframe" name="iframe3" src="airport_df.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+              <a class="btn btn-dark" href="data/routes.txt" target="iframe3" role="button">SQL</a>
+              <a class="btn btn-dark" href="imageframe3.html" target="iframe3" role="button">Images</a>             <p>              
+            <iframe class="responsive-iframe" name="iframe3" src="iframelanding.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
       </div>      
+      </div>
       </div>
   
     <div class="main" id="section5">
         <div class="box transparent"> 
-          <p>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
-        </div>
+          <h1>DATA</h1>
+          <p>below is compilation of all the data we have collected, the tools that were using to present our findings
+          <div class="col-md-12 text-center">
+          <a class="btn btn-dark" href="sidebar_csv.html" target="iframe6" role="button">DATA</a>
+          <iframe class="responsive-iframe" name="iframe6" src="iframelanding.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+        </div>      
       </div>
+    </div>
 
       <div class="main" id="section6">
         <div class="box transparent">
-          <p>this section is for the routes data, info...... this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......this section is for the routes data, info......
-          </div>
-      </div>                
-   
+          <h1>TABLES</h1>
+          <P>Below is the combined table of all the collected data.
+            <div class="col-md-12 text-center">
+              <a class="btn btn-dark" href="airportroutes.html" target="iframe6" role="button">Table</a>
+            <iframe class="responsive-iframe" name="iframe6" src="iframelanding.html" allowtransparency="true" width=100% height="400" frameborder="no"></iframe></p>
+      </div>      
+      </div>
+     </div>
     </body>
     </html>
     
