@@ -1,9 +1,21 @@
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
-ROUTES SQL GOES HERE
+CREATE TABLE "routes" (
+    "route_id" SERIAL   NOT NULL,
+    "airline_id" INTEGER   NOT NULL,
+    "source_iata" VARCHAR(4)   NOT NULL,
+    "sour_airp_id" VARCHAR(5)   NOT NULL,
+    "destination_iata" VARCHAR(4)   NOT NULL,
+    "dest_airp_id" VARCHAR(5)   NOT NULL,
+    CONSTRAINT "pk_routes" PRIMARY KEY (
+        "route_id"
+     )
+);
+
+ALTER TABLE "airports" ADD CONSTRAINT "fk_airports_airport_id" FOREIGN KEY("airport_id")
+REFERENCES "routes" ("airline_id");
+
+ALTER TABLE "routes" ADD CONSTRAINT "fk_routes_airline_id" FOREIGN KEY("airline_id")
+REFERENCES "airlines" ("airline_id");
+
+ALTER TABLE "routes" ADD CONSTRAINT "fk_routes_sour_airp_id" FOREIGN KEY("sour_airp_id")
+REFERENCES "airports" ("airport_id");
+

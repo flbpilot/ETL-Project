@@ -1,18 +1,14 @@
--- Table: public.airports
-
--- DROP TABLE public.airports;
-
-CREATE TABLE public.airports
-(
-    icao text COLLATE pg_catalog."default" NOT NULL,
-    airport_id bigint,
-    airport_name text COLLATE pg_catalog."default",
-    city text COLLATE pg_catalog."default",
-    iata text COLLATE pg_catalog."default",
-    timezone text COLLATE pg_catalog."default",
-    CONSTRAINT airports_pkey PRIMARY KEY (icao)
-)
-
+-- Create tables
+CREATE TABLE "airports" (
+    "airport_id" VARCHAR(5)   NOT NULL,
+    "name" VARCHAR(100)   NOT NULL,
+    "city" VARCHAR(50)   NOT NULL,
+    "icao" VARCHAR(4)   NOT NULL,
+    "timezone" INT   NOT NULL,
+    CONSTRAINT "pk_airports" PRIMARY KEY (
+        "airport_id"
+     )
+);
 TABLESPACE pg_default;
 
 ALTER TABLE public.airports
@@ -25,3 +21,14 @@ CREATE INDEX ix_airports_icao
     ON public.airports USING btree
     (icao COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
+
+
+ALTER TABLE "airports" ADD CONSTRAINT "fk_airports_airport_id" FOREIGN KEY("airport_id")
+REFERENCES "routes" ("airline_id");
+
+ALTER TABLE "routes" ADD CONSTRAINT "fk_routes_airline_id" FOREIGN KEY("airline_id")
+REFERENCES "airlines" ("airline_id");
+
+ALTER TABLE "routes" ADD CONSTRAINT "fk_routes_sour_airp_id" FOREIGN KEY("sour_airp_id")
+REFERENCES "airports" ("airport_id");
+
