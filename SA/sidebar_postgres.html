@@ -25,15 +25,25 @@
           <a href="sidebar_postgres.html" id="POSTGRES">POSTGRES</a>
           <a href="sidebar_erd.html" id="ERD">ERD</a>
         </div>
-        
-        <div style="margin-left:80px;">
-        <div class="box transparent">
-  <p>SELECT * FROM airports;<br />SELECT * FROM airlines;<br />SELECT * FROM routes;</p>
-  <p>-- Show how many routes have each airlines<br />SELECT a.airline_name, COUNT(r.route_id) as total<br />FROM airlines a<br />INNER JOIN routes r <br />ON a.airline_id = r.airline_id<br />GROUP BY a.airline_id<br />ORDER BY a.airline_name ASC;</p>
-  <p>-- Show how many destination routes have each source airport city<br />SELECT a.city, COUNT(r.dest_airp_id) as total<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />GROUP BY a.city<br />ORDER BY total DESC;</p>
-  <p>-- Show how many destination routes have each airport<br />SELECT a.airport_id, a.name, COUNT(r.route_id) as total<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.dest_airp_id)<br />GROUP BY a.airport_id;</p>
-  <p>--Show the routes by airport, showing the airline and the destination<br />SELECT a.name, a.city, a.iata, al.airline_name, l.name as "destination airport", l.city as "destination city", r.destination_iata as "destination iata"<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />INNER JOIN airports l<br />ON (l.airport_id=r.dest_airp_id)<br />INNER JOIN airlines al<br />ON (r.airline_id=al.airline_id)<br />ORDER BY a.name ASC;</p>
-  <p><br />-- Show how many destination routes have a particular airport city<br />SELECT a.name, a.city, a.iata, al.airline_name, l.name as "destination airport", l.city as "destination city", r.destination_iata as "destination iata"<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />INNER JOIN airports l<br />ON (l.airport_id=r.dest_airp_id)<br />INNER JOIN airlines al<br />ON (r.airline_id=al.airline_id)<br />WHERE a.city = 'Austin';</p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p>SELECT * FROM airports;<br />SELECT * FROM airlines;<br />SELECT * FROM routes;</p>
+              <p>-- Show how many routes have each airlines<br />SELECT a.airline_name, COUNT(r.route_id) as total<br />FROM airlines a<br />INNER JOIN routes r <br />ON a.airline_id = r.airline_id<br />GROUP BY a.airline_id<br />ORDER BY a.airline_name ASC;</p>
+              <p>-- Show how many destination routes have each source airport city<br />SELECT a.city, COUNT(r.dest_airp_id) as total<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />GROUP BY a.city<br />ORDER BY total DESC;</p>
+              <p>-- Show how many destination routes have each airport<br />SELECT a.airport_id, a.name, COUNT(r.route_id) as total<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.dest_airp_id)<br />GROUP BY a.airport_id;</p>
+              <p>--Show the routes by airport, showing the airline and the destination<br />SELECT a.name, a.city, a.iata, al.airline_name, l.name as "destination airport", l.city as "destination city", r.destination_iata as "destination iata"<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />INNER JOIN airports l<br />ON (l.airport_id=r.dest_airp_id)<br />INNER JOIN airlines al<br />ON (r.airline_id=al.airline_id)<br />ORDER BY a.name ASC;</p>
+              <p><br />-- Show how many destination routes have a particular airport city<br />SELECT a.name, a.city, a.iata, al.airline_name, l.name as "destination airport", l.city as "destination city", r.destination_iata as "destination iata"<br />FROM airports a<br />INNER JOIN routes r<br />ON (a.airport_id=r.sour_airp_id)<br />INNER JOIN airports l<br />ON (l.airport_id=r.dest_airp_id)<br />INNER JOIN airlines al<br />ON (r.airline_id=al.airline_id)<br />WHERE a.city = 'Austin';</p>
+            </div>
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+            </div>
+          </div>
+        </div>
+
+  
           </div>
           </div>
         
