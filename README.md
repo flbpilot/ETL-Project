@@ -1,5 +1,5 @@
 # ETL Projec - UCF Data Analytics and Visualization Bootcamp
-![airport.png](images/sec1.png)
+![airport.png](images/sec1.jpg)
 
 ## an inside look of the Data of Airpotrs, Airlines and Routes
 
@@ -14,9 +14,9 @@ After all the data has being processed accordingly we will create an ERD to show
 
 ## Data Story
 
-[Airlines.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv )
-[Aiports.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv  )
-[Routes.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv )
+[https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv )
+[https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv )
+[https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv)
 
 Airports, Airlines, and Routes is a comprehensive dataset which includes air travel data including airports, airlines, routes, and airplanes. The database contains over 10,000 data points compiled by OpenFlights (https://openflights.org) collected from a variety of sources.
 Additional information is available here - https://openflights.org
@@ -32,7 +32,7 @@ Additional information is available here - https://openflights.org
 
 ## Web Page Description
 
-[linktoindex.html](https://flbpilot.github.io/ETL-Project/)
+[https://flbpilot.github.io/ETL-Project/](https://flbpilot.github.io/ETL-Project/)
 
 This first section of the webpage show a navbar with menu next options: 
  * Home : Will take you to the first section.
@@ -47,7 +47,7 @@ This first section of the webpage show a navbar with menu next options:
 For each table of the Database we have the same screen. Each table have tree options: Table, Schema and Images.
 * Table: Will show the table data.
 
-![screenshot2.png](images/screenshot2.png)
+![screenshot2.png](images/screenshot2table.png)
 
 * Schema: Will show the SQL query used to create the table.
 
@@ -58,15 +58,12 @@ For each table of the Database we have the same screen. Each table have tree opt
 ![screenshot2chart.png](images/screenshot2chart.png)
 
 For the Data option you will have two more options:
-* Data: Will show the Data set in different versions. Using the dropdown menu at the side:
-
-![screenshotdata.png](images/screenshotdata.png)
-
-![screenshotdata.png](images/option.gif)
+* Data: Will show the Data set in different versions. 
+Using the dropdown menu at the side:
+![screenshotdata.gif](images/option.gif)
 
 * CSV: Will show the csv files
-
-![screenshotdata2.png](images/screenshotdata2.png)
+![screenshotdata.png](images/screenshotdata.png)
 
 * Postgres: Will show all the querys used
 
@@ -82,5 +79,5 @@ For the Data option you will have two more options:
 
 * Final Table: Will show a table created with all the airports listing all their destination city.
 
-![screenshot2table.png](images/screenshot2table.png)
+![screenshot2table.png](images/screenshotdata2.png)
 
