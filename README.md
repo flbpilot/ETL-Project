@@ -13,7 +13,7 @@ After all the data has being processed accordingly we will create an ERD to show
   * Ian Castro  
 
 ## Data Story
-
+Links to the Dataset:
 [https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airlines.csv )
 [https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=airports.csv )
 [https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv](https://data.world/tylerudite/airports-airlines-and-routes/workspace/file?filename=routes.csv)
@@ -31,7 +31,7 @@ Additional information is available here - https://openflights.org
 * SQLAlchemy
 
 ## Web Page Description
-
+Links to the web project:
 [https://flbpilot.github.io/ETL-Project/](https://flbpilot.github.io/ETL-Project/)
 
 This first section of the webpage show a navbar with menu next options: 
@@ -57,7 +57,7 @@ For each table of the Database we have the same screen. Each table have tree opt
 
 ![screenshot2chart.png](images/screenshot2chart.png)
 
-For the Data option you will have two more options:
+For the Data option you will have two more options (Data and Table):
 * Data: Will show the Data set in different versions. 
 Using the dropdown menu at the side:
 ![screenshotdata.gif](images/option.gif)
@@ -73,7 +73,7 @@ Using the dropdown menu at the side:
 
 ![screenshotdataj.png](images/screenshotdataj.png)
 
-*ERD: Will show the ERD diagram
+* ERD: Will show the ERD diagram
 
 ![screenshotdatae.png](images/screenshotdatae.png)
 
